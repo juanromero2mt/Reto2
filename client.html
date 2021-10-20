@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+       <meta charset="UTF-8">
+       <title>CLIENT CRUD</title>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+       <script type="text/javascript" src="js/funcionesClient.js"></script>
+       <style>
+        table, th, td {
+         border: 2px solid rgba(5, 62, 167, 0.856);
+         border-collapse: separate;
+        }
+        </style>
+        
+   </head> 
+   <body>
+      <h1>Gestión de Clientes</h1>
+      <div id="resultado"></div>
+      <button onclick="traerInformacionCliente()">Consultar</button>
+      <br>
+      <br>
+      <div>
+          <input type="number" id="id" placeholder="id">
+          <input type="text" id="name" placeholder="name">
+          <input type="text" id="email" placeholder="email">
+          <input type="number" id="age" placeholder="age">
+      </div>
+      <br>
+      <button onclick="guardarInformacionCliente()">Insertar!</button>
+      <br>
+      <br>
+      <br>
+      <a href="index.html">Regresar pagina principal</a>
+
+   </body>
+</html>
